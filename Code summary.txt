@@ -1,0 +1,35 @@
+🈸DocumentRegistry.sol
+🈸ＤｏｃｕｍｅｎｔＲｅｇｉｓｔｒｙ。ｓｏｌ
+▁ ▂ ▄ ▅ ▆ ▇ █ 🈸DocumentRegistry.sol █ ▇ ▆ ▅ ▄ ▂ ▁
+
+🔣Variables:
+Tipo		Nombre			Contenido interior
+struct		DocumentInfo	address signer
+							bytes signature
+							uint256 timestamp
+bytes32[]	allDocumentHashes
+mapping		documentRecords
+mapping		signerDocuments
+
+📑 Events
+Nombre					Contenido interior
+DocumentRegistered		bytes32 documentHash
+						address signer
+						uint256 timestamp
+
+🗃 Functions
+Nombre					Variables interiores	Retorna						Tests
+storeDocumentHash		bytes32 _documentHash	None						testStoreDocumentSuccess / testStoreDocumentAlreadyExists
+						uint256 _timestamp
+						bytes _signature
+
+getDocumentInfo			bytes32 _documentHash	address signer
+												bytes signature
+												uint256 timestamp
+											
+getAllDocumentHashes	None					bytes32[] "sin_nombre"
+												(return allDocumentHashes)
+
+"Me voy porque me di cuenta de que no puedes dame lo que necesito
+Y seria violento para ti exigirte que cumplas con mis espectativas
+Pero también sería violento para mi, quedarme en donde no recibo lo que necesito"
