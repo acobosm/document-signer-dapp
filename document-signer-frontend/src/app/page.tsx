@@ -90,6 +90,10 @@ export default function HomePage() {
             // 3. Actualizamos el estado de la DApp
             setDocumentHash(hashHex);
 
+<<<<<<< HEAD
+=======
+            //alert(`✅ Hash calculado para ${file.name}: ${hashHex.slice(0, 10)}...`);  // ******* LINEA A ELIMINAR A POSTERIOR *******
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
             alert(`✅ Hash calculado para ${file.name}: ${hashHex}`);
           } catch (error) {
             console.error("Error al calcular el hash:", error);
@@ -378,6 +382,10 @@ export default function HomePage() {
             : 'hover:bg-gray-100 border border-transparent'
             }`}
         >
+<<<<<<< HEAD
+=======
+          {/* #{index + 1}: {wallet.address.slice(0, 6)}...{wallet.address.slice(-4)}  // ******* LINEA A SER ELIMINADA ******* */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
           #{index + 1}: {wallet.address}
         </div>
       ))}
@@ -428,9 +436,18 @@ export default function HomePage() {
   };
 
   return (
+<<<<<<< HEAD
     <main className="min-h-screen bg-gray-900 p-4 sm:p-8 text-white">
 
       {/* Contenedor principal de la DApp */}
+=======
+    //<main className="min-h-screen bg-gray-50 p-4 sm:p-8">  // ******* LINEA A SER ELIMINADA *******
+    //<main className="min-h-screen bg-gray-900 p-4 sm:p-8">  // ******* LINEA A SER ELIMINADA *******
+    <main className="min-h-screen bg-gray-900 p-4 sm:p-8 text-white">
+
+      {/* Contenedor principal de la DApp */}
+      {/*<div className="bg-white shadow-xl rounded-xl max-w-6xl mx-auto p-0 border border-gray-200">  // ******* LINEA A SER ELIMINADA ******* */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
       <div className="shadow-xl rounded-xl max-w-6xl mx-auto p-0 border border-gray-700 text-white">
 
         {/* ---------------------------------------------------- */}
@@ -441,15 +458,35 @@ export default function HomePage() {
             ETH Document Signer <span className="ml-3 text-2xl">✍️</span>
           </h1>
           {/* Aquí ubicaremos solo la información fija de la wallet (Wallet Seleccionada) */}
+<<<<<<< HEAD
+=======
+          {/*<p className="mt-2 text-sm"><strong>Wallet Seleccionada:</strong> **{selectedWallet}**</p> ******* LINEA A SER BORRADA ******* */}
+          {/*<p className="mt-2 text-sm"><strong>Wallet Seleccionada:</strong><br />**{selectedWallet?.address.slice(0, 4)}...{selectedWallet?.address.slice(-4)}**</p> ******* LINEA A SER BORRADA ******* */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
           <p className="mt-2 text-sm"><strong>Wallet Seleccionada:</strong><br />** {selectedWallet?.address} **</p>
         </div>
 
         {/* ---------------------------------------------------- */}
         {/* CONTENEDOR FLEXIBLE (Tabs y Contenido) */}
         {/* ---------------------------------------------------- */}
+<<<<<<< HEAD
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', color: '#000000' }} className="shadow-2xl rounded-xl p-0 border p-4 gap-4">
 
           {/* 1. BARRA DE NAVEGACIÓN LATERAL (TABS) */}
+=======
+        {/*<div className="flex">  // ******* LINEA POR ELMINIAR ******* */}
+
+        {/*<div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr' }} className="bg-white shadow-2xl rounded-xl max-w-6xl mx-auto p-0 border border-gray-200">  // ******* LINEA POR ELMINIAR ******* */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', color: '#000000' }} className="shadow-2xl rounded-xl p-0 border p-4 gap-4">
+
+          {/* 1. BARRA DE NAVEGACIÓN LATERAL (TABS) */}
+
+          {/* <div className="flex flex-col w-1/4 p-0 bg-gray-100 border-r border-gray-200 rounded-bl-xl">  // ******* LINEA A ELIMINAR ******* */}
+          {/*<div className="flex flex-col w-1/4 p-0 bg-gray-100 border-r border-gray-200 rounded-bl-xl">  // ******* LINEA A SER ELIMINADA ******* */}
+          {/*<div className="flex flex-col p-0 bg-gray-100 border-r border-gray-200 rounded-bl-xl">  // ******* LINEA A SER ELIMINADA ******* */}
+          {/*<div style={{ display: 'flex', flexDirection: 'column' }} className="p-0 bg-gray-100 border-r border-gray-200 rounded-bl-xl">  // ******* LINEA A SER ELIMINADA ******* */}
+          {/*<div style={{ display: 'flex', flexDirection: 'column' }} className="p-0 rounded-bl-xl">  // ******* LINEA A SER ELIMINADA ******* */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
           <div style={{ display: 'flex', flexDirection: 'column' }} className="p-0 rounded-bl-xl bg-white rounded-xl shadow-xl text-black">
 
             {/* Función auxiliar para determinar la clase de color/estilo de la pestaña */}
@@ -526,12 +563,25 @@ export default function HomePage() {
           </div>
 
           {/* 2. CONTENIDO PRINCIPAL (CAMBIA SEGÚN EL TAB ACTIVO) */}
+<<<<<<< HEAD
           <div className="p-6 rounded-xl shadow-xl text-black"
             style={{ backgroundColor: getTabContentColor(activeTab), paddingLeft: '12px', color: '#000000' }}>
             {activeTab === 'Wallet' && (
               <>
                 {/* Aquí va el código de Selección de Wallets (#0 a #9) */}
                 < h2 className="text-xl font-semibold mb-3 text-black">1. Selección y Conexión con Wallet 💼</h2>
+=======
+          {/*<div className="w-3/4 p-6" style={{ backgroundColor: getTabContentColor(activeTab) }}>  // ******* LINEA A SER ELIMINADA ******* */}
+          <div className="p-6 rounded-xl shadow-xl text-black"
+            style={{ backgroundColor: getTabContentColor(activeTab), paddingLeft: '12px', color: '#000000' }}>
+            {activeTab === 'Wallet' && (
+              //<div className="p-4 bg-white rounded-lg border">  // ******* LINEA A SER ELIMINADA *******
+              <>
+                {/* Aquí va el código de Selección de Wallets (#0 a #9) */}
+                < h2 className="text-xl font-semibold mb-3 text-black">1. Selección y Conexión con Wallet 💼</h2>
+                {/* Coloque el mapeo (map) de `anvilWallets` aquí */}
+                {/* (código de Sección 1) */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                 {/* SECCIÓN PARA ESCOGER WALLET Y CONECTAR */}
                 <div className="p-4 bg-gray-50 rounded-lg mb-6">
 
@@ -554,16 +604,31 @@ export default function HomePage() {
 
                   {isConnected && wallets.length > 0 && renderWalletSelector()}
                 </div>
+<<<<<<< HEAD
+=======
+                {/*</div>*/}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
               </>
             )}
 
             {activeTab === 'Register' && (
+<<<<<<< HEAD
               <>
                 <h2 className="text-xl font-semibold mb-3 text-black">2. Registrar Documento en Blockchain ⛓</h2>
                 {/* SECCIÓN DE REGISTRO DE DOCUMENTO */}
                 <div className="p-4 bg-blue-50 rounded-lg border-blue-200 border">
 
                   {/* Campo de Carga de Archivo */}
+=======
+              //<div className="p-4 bg-white rounded-lg border">  // ******* LINEA A SER ELIMINADA *******
+              <>
+                <h2 className="text-xl font-semibold mb-3 text-black">2. Registrar Documento en Blockchain ⛓</h2>
+                {/* Aquí va el código de la Sección 2 (Registrar Documento) */}
+                {/* SECCIÓN DE REGISTRO DE DOCUMENTO */}
+                <div className="p-4 bg-blue-50 rounded-lg border-blue-200 border">
+
+                  {/* Campo de Carga de Archivo (NUEVA FUNCIONALIDAD) */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                   <div className="mb-4 p-4 border rounded-lg bg-white shadow-sm">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       <br /><strong>Seleccionar y Cargar Archivo 📤</strong>
@@ -593,7 +658,12 @@ export default function HomePage() {
                   {/* Botón de Registro */}
                   <button
                     onClick={handleSignAndStore} // Usamos su función de firma
+<<<<<<< HEAD
                     disabled={!selectedWallet || isProcessing || documentHash === INITIAL_HASH_DISPLAY}
+=======
+                    disabled={!selectedWallet || isProcessing || documentHash === INITIAL_HASH_DISPLAY} // Usamos documentHash
+                    // CLASES WEB3/DAPP (357)
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                     className="
                       w-full
                       bg-blue-600
@@ -609,6 +679,10 @@ export default function HomePage() {
                       disabled:bg-blue-500
                       disabled:shadow-none
                       disabled:cursor-not-allowed"
+<<<<<<< HEAD
+=======
+                  // ESTILO INLINE PARA FORZAR EL COLOR (ESTO ES LA CLAVE)
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                   //style={{
                   //backgroundColor: '#2563EB', // Color azul-600 en hexadecimal
                   //}}
@@ -625,12 +699,23 @@ export default function HomePage() {
                     {logMessage}
                   </p>
                 )}
+<<<<<<< HEAD
+=======
+                {/*</div>*/}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
               </>
             )}
 
             {activeTab === 'Check' && (
+<<<<<<< HEAD
               <>
                 <h2 className="text-xl font-semibold mb-3 text-black">3. Consultar Registro de Documento 🔎</h2>
+=======
+              //<div className="p-4 bg-white rounded-lg border">  // ******* LINEA A SER ELIMINADA *******
+              <>
+                <h2 className="text-xl font-semibold mb-3 text-black">3. Consultar Registro de Documento 🔎</h2>
+                {/* Aquí va el código de la Sección 3 (Consultar Registro) */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                 {/* ------------------------------------------------------------------- */}
                 {/* SECCIÓN DE CONSULTA DE DOCUMENTO */}
                 {/* ------------------------------------------------------------------- */}
@@ -651,6 +736,15 @@ export default function HomePage() {
                       file:bg-green-100 file:text-green-700
                       hover:file:bg-green-200"
                     />
+<<<<<<< HEAD
+=======
+                    {/* ------------------------------------------------------------------- */}
+                    {/* 1. ELIMINAR CÓDIGO OBSOLETO: Hash a Consultar (Texto redundante) */}
+                    {/* ------------------------------------------------------------------- */}
+                    {/* <p className="mt-2 text-sm font-mono p-2 bg-gray-50 rounded-md break-words border border-gray-200">
+                    **Hash a Consultar:** <span className='text-red-600 font-bold'>{hashToConsult}</span>
+                </p> */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                   </div>
 
                   {queryLogMessage && (
@@ -663,6 +757,10 @@ export default function HomePage() {
 
                   {queryResult && (
                     <div className="mt-4 p-3 bg-white border border-green-400 rounded-md">
+<<<<<<< HEAD
+=======
+                      {/*<p className="font-bold text-green-700 mb-2">✅ Documento Encontrado:</p> // ******* LINEA A SER ELIMINADA ******* */}
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                       <p className="text-sm break-words mb-2">
                         <br /><strong>Hash Consultado:</strong>{' '}
                         <span className="font-mono text-gray-800 font-bold">{hashToConsult}</span>
@@ -681,12 +779,35 @@ export default function HomePage() {
                           {formatTimestamp(queryResult.timestamp.toString())}</span>
                       </p>
 
+<<<<<<< HEAD
+=======
+                      {/*<p className="text-sm break-words">  // ******* BLOQUE INICIAL A SER ELIMINADO SOLO SI LA SOLUCIÓN FINAL FUNCIONA. SINO SERA RESTITUIDO *******
+                        {/***Firma (parcial):** <span className="font-mono text-gray-800">{queryResult.signature.toString().slice(0, 30)}...</span> // ******* LINEA A SER ELIMINADA ******* */}
+                      {/*<span className="font-bold">Firma de transacción:</span>{' '}
+                        <span className="font-mono text-gray-800 break-all">{queryResult.signature.toString()}...</span>
+                      </p>*/}
+
+                      {/*<p className="text-sm font-bold mt-2 mb-1">
+                        Firma de transacción:
+                      </p>*/}
+                      {/* Bloque Aislado para la Firma Larga */}
+                      {/*<div className="p-2 bg-gray-50 rounded-md border border-gray-200 break-all overflow-hidden">
+                        <span className="font-mono text-gray-800 text-xs">
+                          {queryResult.signature.toString()}
+                        </span>
+                      </div>*/}
+
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                       <p className="text-sm font-bold mt-2 mb-1">
                         <strong>Firma de transacción:</strong>
                       </p>
                       <div
                         className="p-2 bg-gray-50 rounded-md border border-gray-200"
+<<<<<<< HEAD
                         // Medidas Fijas para el bloque
+=======
+                        // Medidas Fijas (ajuste 350px si es necesario)
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
                         style={{
                           width: '600px',
                           wordBreak: 'break-all',
@@ -704,6 +825,7 @@ export default function HomePage() {
                     </div>
                   )}
 
+<<<<<<< HEAD
                 </div>
               </>
             )
@@ -790,6 +912,103 @@ export default function HomePage() {
             }
           </div >
 
+=======
+                </div> {/* CIERRE DE LA SECCIÓN DE CONSULTA */}
+                {/*</div>*/}
+              </>
+            )
+            }
+
+            {
+              activeTab === 'Advanced' && (
+                <div className="p-4 bg-white rounded-lg border">
+                  <h2 className="text-xl font-semibold mb-3 text-black">4. Consulta Avanzada de Documentos 🔎</h2>
+                  {/* Aquí va el código de la Consulta Avanzada y Resultados */}
+                  {/* ========== SECCIÓN DE CONSULTA AVANZADA ========== */}
+                  <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+
+                    {/*<h3 className="text-xl font-semibold mb-4 text-yellow-300">4. Consulta Avanzada de Documentos 🔎</h3>    // ******* SECCION A BORRAR ******* */}
+                    <p className="text-sm text-gray-400 mb-4">
+                      Utiliza estas opciones para listar documentos de forma general o filtrada por el firmante.
+                    </p>
+
+                    <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+                      {/* Opción 1: Búsqueda General */}
+                      <button
+                        onClick={handleGetAllDocuments}
+                        disabled={!documentRegistryContract}
+                        className="flex-1 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-200 disabled:opacity-50"
+                      >
+                        Listar Todos los Documentos
+                      </button>
+                      <p> - </p>
+                      {/* Opción 2: Búsqueda por Wallet (Usando la wallet seleccionada) */}
+                      <button
+                        onClick={handleGetDocumentsBySigner}
+                        disabled={!documentRegistryContract || !selectedWallet}
+                        className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-200 disabled:opacity-50"
+                      >
+                        Ver Documentos Firmados por mi Wallet ({selectedWallet?.address}...)
+                      </button>
+                    </div>
+
+                    {/* Mensaje de Log de Consulta Avanzada */}
+                    <p className="mt-4 text-sm text-yellow-400 font-mono">{searchLogMessage}</p>
+
+                    {/* Tabla de Resultados Detallados */}
+                    <div className="mt-6">
+                      <h4 className="text-lg font-semibold mb-3 text-gray-300"><br />Resultados: ({detailedResults.length} documentos)</h4>
+                      {detailedResults.length > 0 ? (
+                        <div className="overflow-x-auto">
+                          <table className="min-w-full table-auto border-collapse border border-gray-500 bg-gray-700 rounded-lg">
+                            <thead className="bg-gray-900">
+                              <tr>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider border border-gray-500">Hash del Documento</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider border border-gray-500">Firmante</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider border border-gray-500">Fecha de Firma</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-700">
+                              {detailedResults.map((doc, index) => (
+                                <tr key={doc.timestamp + index}>
+                                  {/*<td className="px-6 py-4 whitespace-nowrap text-sm text-yellow-300 font-mono">{doc.hash.slice(0, 10)}...</td>  // ******* LINEA A SER ELIMINADA ******* */}
+                                  {/*<td className="px-6 py-4 whitespace-nowrap text-sm text-yellow-300 font-mono">{doc.hash}  .</td>  // ******* LINEA A SER ELIMINADA ******* */}
+                                  <td className="px-6 py-4 align-top border border-gray-500">
+                                    <div
+                                      className="p-1 bg-gray-600 rounded-md border border-gray-500" // Cambié el fondo para que resalte un poco
+                                      style={{
+                                        width: '318px',
+                                        wordBreak: 'break-all',
+                                        overflowY: 'auto',
+                                      }}
+                                    >
+                                      <span className="font-mono text-yellow-300 text-xs">
+                                        {doc.hash}
+                                      </span>
+                                    </div>
+                                  </td>
+                                  {/*<td className="px-6 py-4 whitespace-nowrap text-sm text-white">{doc.signer.slice(0, 10)}...</td>  // ******* LINEA A SER ELIMINADA ******* */}
+                                  {/*<td className="px-6 py-4 whitespace-nowrap text-sm text-white">{doc.signer}  .</td>  // ******* LINEA A SER ELIMINADA ******* */}
+                                  <td className="px-6 py-4 text-sm text-white font-mono break-all border border-gray-500">
+                                    {doc.signer}
+                                  </td>
+                                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300 border border-gray-500">{new Date(Number(doc.timestamp) * 1000).toLocaleString('es-EC')}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      ) : (
+                        <p className="text-gray-400">No hay documentos registrados para mostrar, o la búsqueda aún no se ha ejecutado.</p>
+                      )}
+                    </div>
+                  </div>
+                </div >
+              )
+            }
+          </div >
+
+>>>>>>> a6103bdbea559b8826b5414c5381689de6670248
         </div >
 
       </div >
